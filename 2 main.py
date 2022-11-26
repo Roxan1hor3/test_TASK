@@ -2,7 +2,7 @@ import numpy as np
 from PIL import Image, ImageDraw
 
 
-def find_brightest_spot_v2(img_path, precision):
+def find_brightest_spot_v2(img_path, precision=1):
     """
     green rectangle is the darkest area
     red rectangle is the lightest area
@@ -33,4 +33,4 @@ def find_brightest_spot_v2(img_path, precision):
     img.show()
 
 
-find_brightest_spot_v2('img2.png')
+find_brightest_spot_v2('img2.png', 10)
