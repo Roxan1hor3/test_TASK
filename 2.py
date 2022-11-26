@@ -4,6 +4,7 @@ from PIL import Image, ImageDraw
 
 
 def find_brightest_darkest_spot_v1(img_path):
+    """will find the lightest and darkest pixel"""
     img_for_find_brightest_spot = cv2.imread(img_path)
     img_rgb = np.copy(img_for_find_brightest_spot)
     img_rgb = cv2.cvtColor(img_rgb, cv2.COLOR_BGR2GRAY)
